@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">Calorias</string>
     <string name="action_settings">Settings</string>
+    <string name="tipo_pregunta">Seleccione tipo</string>
+
+    <string-array name="tipo">
+        <item>Desayuno</item>
+        <item>Almuerzo</item>
+        <item>Comida</item>
+        <item>Merienda</item>
+        <item>Cena</item>
+        <item>Picoteo</item>
+        <item>Impulsivo</item>
+    </string-array>
 </resources>

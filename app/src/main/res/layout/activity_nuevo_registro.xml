@@ -6,29 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".Activities.NuevoRegistro">
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout"
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/etNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <EditText
-            android:id="@+id/etNombre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:ems="10"
-            android:inputType="textCapCharacters"
-            android:selectAllOnFocus="true"
-            android:singleLine="true"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </android.support.design.widget.TextInputLayout>
+        android:entries="@array/tipo"
+        android:prompt="@string/tipo_pregunta"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/textInputLayout2"
@@ -50,11 +44,7 @@
             android:selectAllOnFocus="true"
             android:singleLine="true"
             android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etNotas" />
+            android:textStyle="bold" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -62,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+        app:layout_constraintTop_toBottomOf="@+id/etNombre">
 
         <EditText
             android:id="@+id/etNotas"
@@ -75,11 +65,7 @@
             android:inputType="textMultiLine"
             android:lines="2"
             android:selectAllOnFocus="true"
-            android:textSize="15sp"
-            app:layout_constraintBottom_toTopOf="@+id/btnAlmacenar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+            android:textSize="15sp" />
 
     </android.support.design.widget.TextInputLayout>
 
@@ -88,7 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/etNotas"
+        android:layout_below="@+id/textInputLayout3"
         android:layout_marginBottom="8dp"
         android:text="Almacenar"
         android:textSize="20sp"
