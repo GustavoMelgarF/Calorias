@@ -11,7 +11,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c5e3519-3bc8-4163-8bf5-936844ba70f3" name="Default" comment="cambios nuevo registro">
+    <list default="true" id="9c5e3519-3bc8-4163-8bf5-936844ba70f3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
@@ -21,20 +21,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Principal.java" afterPath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Activities/Principal.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/clases/BaseDatos.java" afterPath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/BaseDatos/BaseDatos.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/clases/CaloriasApp.java" afterPath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/CaloriasApp.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/clases/GenericFileProvider.java" afterPath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Providers/GenericFileProvider.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/clases/MyAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Adaptadores/MyAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/clases/MyViewHolder.java" afterPath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Adaptadores/MyViewHolder.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/clases/registro.java" afterPath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Objetos/registro.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/nuevoRegistro.java" afterPath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Activities/NuevoRegistro.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Activities/NuevoRegistro.java" afterPath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Activities/NuevoRegistro.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_nuevo_registro.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_nuevo_registro.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_principal.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_principal.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_principal.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_principal.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_principal.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_principal.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/model.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/model.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -89,7 +78,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseDatos.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BaseDatos.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/gustavo/calorias/BaseDatos/BaseDatos.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1564">
@@ -106,7 +95,7 @@
           </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+              <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -161,9 +150,12 @@
       <file leaf-file-name="NuevoRegistro.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Activities/NuevoRegistro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1436">
-              <caret line="197" column="32" lean-forward="false" selection-start-line="197" selection-start-column="17" selection-end-line="197" selection-end-column="32" />
-              <folding />
+            <state relative-caret-position="688">
+              <caret line="127" column="66" lean-forward="false" selection-start-line="127" selection-start-column="66" selection-end-line="127" selection-end-column="66" />
+              <folding>
+                <element signature="e#3517#5752#0" expanded="true" />
+                <element signature="e#5751#5752#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -178,24 +170,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="provider_paths.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/provider_paths.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="activity_nuevo_registro.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_nuevo_registro.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+            <state relative-caret-position="299">
+              <caret line="105" column="8" lean-forward="false" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/model.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="97" column="46" lean-forward="false" selection-start-line="97" selection-start-column="46" selection-end-line="97" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -2257,16 +2252,16 @@
         <option value="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Principal.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/clases/registro.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/nuevoRegistro.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/model.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Objetos/registro.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/BaseDatos/Adaptadores.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Adaptadores/MyViewHolder.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Activities/nuevoRegistro.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Activities/NuevoRegistro.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_nuevo_registro.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/BaseDatos/BaseDatos.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Activities/NuevoRegistro.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_nuevo_registro.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/model.xml" />
       </list>
     </option>
   </component>
@@ -2718,7 +2713,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533397764473</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="cambios nuevo registro">
+      <created>1533399411567</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1533399411567</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2731,10 +2733,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5021322" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.50319827" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.4968017" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2903,7 +2905,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2261">
           <caret line="133" column="68" lean-forward="false" selection-start-line="133" selection-start-column="68" selection-end-line="133" selection-end-column="68" />
-          <folding />
+          <folding>
+            <element signature="e#3517#5752#0" expanded="true" />
+            <element signature="e#5751#5752#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2971,17 +2976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-119">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/model.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3112,14 +3106,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Activities/NuevoRegistro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1436">
-          <caret line="197" column="32" lean-forward="false" selection-start-line="197" selection-start-column="17" selection-end-line="197" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Providers/GenericFileProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -3136,24 +3122,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_nuevo_registro.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -3162,6 +3137,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1564">
           <caret line="102" column="22" lean-forward="false" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Activities/NuevoRegistro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="688">
+          <caret line="127" column="66" lean-forward="false" selection-start-line="127" selection-start-column="66" selection-end-line="127" selection-end-column="66" />
+          <folding>
+            <element signature="e#3517#5752#0" expanded="true" />
+            <element signature="e#5751#5752#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_nuevo_registro.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="105" column="8" lean-forward="false" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/model.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="97" column="46" lean-forward="false" selection-start-line="97" selection-start-column="46" selection-end-line="97" selection-end-column="46" />
           <folding />
         </state>
       </provider>
