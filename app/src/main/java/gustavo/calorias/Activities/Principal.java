@@ -1,9 +1,8 @@
-package gustavo.calorias;
+package gustavo.calorias.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -15,12 +14,12 @@ import android.view.MenuItem;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import java.util.Locale;
 
-import gustavo.calorias.clases.BaseDatos;
-import gustavo.calorias.clases.MyAdapter;
-import gustavo.calorias.clases.registro;
+import gustavo.calorias.BaseDatos.BaseDatos;
+import gustavo.calorias.Adaptadores.MyAdapter;
+import gustavo.calorias.Objetos.registro;
+import gustavo.calorias.R;
 
 public class Principal extends AppCompatActivity {
 
@@ -71,7 +70,7 @@ public class Principal extends AppCompatActivity {
     }
 
     private void nuevoRegistro(){
-        Intent intent = new Intent(this, nuevoRegistro.class);
+        Intent intent = new Intent(this, NuevoRegistro.class);
         intent.putExtra("editar", new registro("", "", 0, ""));
         startActivity(intent);
     }

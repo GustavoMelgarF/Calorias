@@ -1,8 +1,7 @@
-package gustavo.calorias;
+package gustavo.calorias.Activities;
 
 import android.Manifest;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -16,7 +15,6 @@ import android.support.annotation.NonNull;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,10 +27,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import gustavo.calorias.clases.BaseDatos;
-import gustavo.calorias.clases.registro;
+import gustavo.calorias.BaseDatos.BaseDatos;
+import gustavo.calorias.Objetos.registro;
+import gustavo.calorias.R;
 
-public class nuevoRegistro extends AppCompatActivity {
+public class NuevoRegistro extends AppCompatActivity {
 
     private static final int CAMERA_REQUEST = 1888;
     private static final int MY_CAMERA_PERMISSION_CODE = 100;
@@ -76,7 +75,7 @@ public class nuevoRegistro extends AppCompatActivity {
                     cameraIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                     try {
                         imageUri = FileProvider.getUriForFile(
-                                nuevoRegistro.this,
+                                NuevoRegistro.this,
                                 getApplicationContext().getPackageName() + "gustavo.calorias.clases.GenericFileProvider",
                                 createImageFile());
                     } catch (IOException e) {
@@ -104,7 +103,7 @@ public class nuevoRegistro extends AppCompatActivity {
                                 ruta
                         );
                         BaseDatos.obtenerInstancia(getApplicationContext()).insertarRegistro(nuevoRegistro);
-                        Intent intent = new Intent(nuevoRegistro.this, Principal.class);
+                        Intent intent = new Intent(NuevoRegistro.this, Principal.class);
                         startActivity(intent);
                     }
                 }else{
@@ -122,7 +121,7 @@ public class nuevoRegistro extends AppCompatActivity {
                                 editar.getId()
                         );
                         BaseDatos.obtenerInstancia(getApplicationContext()).actualizar_Registro(nuevoRegistro);
-                        Intent intent = new Intent(nuevoRegistro.this, Principal.class);
+                        Intent intent = new Intent(NuevoRegistro.this, Principal.class);
                         startActivity(intent);
                     }
                 }

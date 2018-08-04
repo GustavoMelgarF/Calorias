@@ -1,4 +1,4 @@
-package gustavo.calorias.clases;
+package gustavo.calorias;
 
 import android.app.Application;
 

@@ -1,4 +1,4 @@
-package gustavo.calorias.clases;
+package gustavo.calorias.Adaptadores;
 
 import android.media.Image;
 import android.support.constraint.ConstraintLayout;

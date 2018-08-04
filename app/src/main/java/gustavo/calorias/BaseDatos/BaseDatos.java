@@ -1,4 +1,4 @@
-package gustavo.calorias.clases;
+package gustavo.calorias.BaseDatos;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
 
+import gustavo.calorias.Objetos.registro;
 
 
 /**
@@ -21,15 +22,15 @@ public class BaseDatos extends SQLiteOpenHelper {
     private static final String DATABASE_TABLE_REGISTRO = "calorias";
     private static final int DATABASE_VERSION = 1;
 
-    public static final String REGISTRO_COLUMNA_ID = "_id";
-    public static final String REGISTRO_COLUMNA_NOMBRE = "nombre";
-    public static final String REGISTRO_COLUMNA_NOTAS = "notas";
-    public static final String REGISTRO_COLUMNA_CALORIAS= "calorias";
-    public static final String REGISTRO_COLUMNA_FECHA = "fecha";
-    public static final String REGISTRO_COLUMNA_HORA = "Hora";
-    public static final String REGISTRO_COLUMNA_RUTAIMAGEN = "rutaImagen";
+    private static final String REGISTRO_COLUMNA_ID = "_id";
+    private static final String REGISTRO_COLUMNA_NOMBRE = "nombre";
+    private static final String REGISTRO_COLUMNA_NOTAS = "notas";
+    private static final String REGISTRO_COLUMNA_CALORIAS= "calorias";
+    private static final String REGISTRO_COLUMNA_FECHA = "fecha";
+    private static final String REGISTRO_COLUMNA_HORA = "Hora";
+    private static final String REGISTRO_COLUMNA_RUTAIMAGEN = "rutaImagen";
 
-    public static Context context_;
+    private static Context context_;
 
 
     public static synchronized BaseDatos obtenerInstancia(Context context) {
@@ -99,7 +100,7 @@ public class BaseDatos extends SQLiteOpenHelper {
     public boolean actualizar_Registro(registro registro){
         SQLiteDatabase db = this.getWritableDatabase();
 
-        Boolean exito = false;
+        Boolean exito;
 
         String filtro = "_id=" + String.valueOf(registro.getId());
 

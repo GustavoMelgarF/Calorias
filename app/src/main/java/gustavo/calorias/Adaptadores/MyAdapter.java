@@ -1,4 +1,4 @@
-package gustavo.calorias.clases;
+package gustavo.calorias.Adaptadores;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,10 +11,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
-import java.util.List;
 
+import gustavo.calorias.Objetos.registro;
 import gustavo.calorias.R;
-import gustavo.calorias.nuevoRegistro;
+import gustavo.calorias.Activities.NuevoRegistro;
 
 public class MyAdapter  extends RecyclerView.Adapter<MyViewHolder> {
 
@@ -45,7 +45,7 @@ public class MyAdapter  extends RecyclerView.Adapter<MyViewHolder> {
         holder.marco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(c, nuevoRegistro.class);
+                Intent intent = new Intent(c, NuevoRegistro.class);
                 intent.putExtra("editar", listado.get(position));
                 c.startActivity(intent);
             }
