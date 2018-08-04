@@ -17,9 +17,11 @@ import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.io.File;
@@ -38,7 +40,8 @@ public class NuevoRegistro extends AppCompatActivity {
     private static final int MY_CAMERA_PERMISSION_CODE = 100;
     private static final int READ_EXTERNAL_STORAGE_PERMISSION_CODE = 101;
     ImageView imageView;
-    EditText etNombre, etNotas, etCalorias;
+    EditText etNotas, etCalorias;
+    Spinner etNombre;
     String ruta;
     Uri imageUri;
 
@@ -93,12 +96,12 @@ public class NuevoRegistro extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (editar.getNombre().equals("")) {
-                    if (!etNombre.getText().toString().equals("") &&
+                    if (!etNombre.getSelectedItem().toString().equals("") &&
                             !etNotas.getText().toString().equals("") &&
                             !etCalorias.getText().toString().equals("") &&
                             !ruta.equals("")) {
                         nuevoRegistro = new registro(
-                                etNombre.getText().toString(),
+                                etNombre.getSelectedItem().toString(),
                                 etNotas.getText().toString(),
                                 Integer.parseInt(etCalorias.getText().toString()),
                                 ruta
@@ -108,12 +111,12 @@ public class NuevoRegistro extends AppCompatActivity {
                         startActivity(intent);
                     }
                 }else{
-                    if (!etNombre.getText().toString().equals("") &&
+                    if (!etNombre.getSelectedItem().toString().equals("") &&
                             !etNotas.getText().toString().equals("") &&
                             !etCalorias.getText().toString().equals("") &&
                             !ruta.equals("")) {
                         nuevoRegistro = new registro(
-                                etNombre.getText().toString(),
+                                etNombre.getSelectedItem().toString(),
                                 etNotas.getText().toString(),
                                 Integer.parseInt(etCalorias.getText().toString()),
                                 ruta,
@@ -133,7 +136,16 @@ public class NuevoRegistro extends AppCompatActivity {
         });
 
         if (!editar.getNombre().equals("")){
-            etNombre.setText(editar.getNombre());
+
+            String compareValue = editar.getNombre();
+            ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.tipo, android.R.layout.simple_spinner_item);
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            etNombre.setAdapter(adapter);
+            if (compareValue != null) {
+                int spinnerPosition = adapter.getPosition(compareValue);
+                etNombre.setSelection(spinnerPosition);
+            }
+
             etCalorias.setText(String.valueOf(editar.getCalorias()));
             etNotas.setText(editar.getNotas());
             imageView.setImageBitmap(RotateBitmap(BitmapFactory.decodeFile(editar.getRutaImagen())));

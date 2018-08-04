@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="CALORÍAS POR DÍA"
+        android:key="calorias_categoria">
+
+        <EditTextPreference
+            android:key="calorias"
+            android:summary="Calorías máximas por día"
+            android:title="Calorías"
+            android:dialogTitle="Insertar Calorías"
+            android:dialogMessage="Calorías máximas por día"
+            android:defaultValue="1600"
+            android:inputType="number"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

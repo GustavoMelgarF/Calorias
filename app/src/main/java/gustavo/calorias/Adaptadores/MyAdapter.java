@@ -37,7 +37,7 @@ public class MyAdapter  extends RecyclerView.Adapter<MyViewHolder> {
 
         //BIND DATA
         holder.nombre.setText(listado.get(position).getNombre());
-        holder.notas.setText(listado.get(position).getNombre());
+        holder.notas.setText(listado.get(position).getNotas());
         holder.calorias.setText(String.valueOf(listado.get(position).getCalorias()));
         holder.fechaHora.setText(String.valueOf(listado.get(position).getFecha())+" "+String.valueOf(listado.get(position).getHora()));
         holder.imageView.setImageBitmap(RotateBitmap(BitmapFactory.decodeFile(listado.get(position).getRutaImagen())));
