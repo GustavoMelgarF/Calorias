@@ -81,7 +81,7 @@
             android:layout_width="100dp"
             android:layout_height="0dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             card_view:layout_constraintBottom_toBottomOf="parent"
@@ -95,12 +95,12 @@
                 android:layout_height="match_parent"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
+                android:contentDescription="@string/foto"
                 android:scaleType="centerCrop"
                 card_view:layout_constraintEnd_toEndOf="parent"
                 card_view:layout_constraintHorizontal_bias="1.0"
                 card_view:layout_constraintStart_toStartOf="parent"
-                card_view:srcCompat="@android:drawable/ic_menu_report_image"
-                android:contentDescription="@string/foto" />
+                card_view:srcCompat="@android:drawable/ic_menu_report_image" />
         </android.support.constraint.ConstraintLayout>
     </android.support.constraint.ConstraintLayout>
 

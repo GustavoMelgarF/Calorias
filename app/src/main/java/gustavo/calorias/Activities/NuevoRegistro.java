@@ -126,6 +126,7 @@ public class NuevoRegistro extends AppCompatActivity {
                         );
                         BaseDatos.obtenerInstancia(getApplicationContext()).actualizar_Registro(nuevoRegistro);
                         Intent intent = new Intent(NuevoRegistro.this, Principal.class);
+                        finish();
                         startActivity(intent);
                     }else{
                         Snackbar.make(v, "Campos requeridos vacíos", Snackbar.LENGTH_LONG)

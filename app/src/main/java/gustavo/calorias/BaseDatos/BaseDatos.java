@@ -148,7 +148,7 @@ public class BaseDatos extends SQLiteOpenHelper {
                 new String[]{fechaBuscar},
                 null /* groupBy */,
                 null /* having */,
-                REGISTRO_COLUMNA_HORA+" ASC"
+                REGISTRO_COLUMNA_HORA+" DESC"
         );
 
         if (cursor.moveToFirst()){
@@ -171,6 +171,42 @@ public class BaseDatos extends SQLiteOpenHelper {
         db.close();
 
         return listaRegistros;
+    }
+
+    public int obtenerCaloriasTotalesDia(String fechaBuscar){
+        SQLiteDatabase db = this.getReadableDatabase();
+        int caloriasDevolver = 0;
+
+
+        Cursor cursor = db.query(
+                DATABASE_TABLE_REGISTRO,
+                new String[]{
+                        REGISTRO_COLUMNA_ID,
+                        REGISTRO_COLUMNA_NOMBRE,
+                        REGISTRO_COLUMNA_NOTAS,
+                        REGISTRO_COLUMNA_CALORIAS,
+                        REGISTRO_COLUMNA_FECHA,
+                        REGISTRO_COLUMNA_HORA,
+                        REGISTRO_COLUMNA_RUTAIMAGEN
+                },
+                "fecha = ?",
+                new String[]{fechaBuscar},
+                null /* groupBy */,
+                null /* having */,
+                REGISTRO_COLUMNA_HORA+" DESC"
+        );
+
+        if (cursor.moveToFirst()){
+            do {
+                caloriasDevolver += cursor.getInt(cursor.getColumnIndex(REGISTRO_COLUMNA_CALORIAS));
+
+            }while (cursor.moveToNext());
+        }
+
+        cursor.close();
+        db.close();
+
+        return caloriasDevolver;
     }
 
     public Boolean eliminarRegistroPorId(int id){
