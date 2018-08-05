@@ -42,7 +42,7 @@ public class NuevoRegistro extends AppCompatActivity {
     ImageView imageView;
     EditText etNotas, etCalorias;
     Spinner etNombre;
-    String ruta;
+    String ruta = "";
     Uri imageUri;
 
     registro editar;

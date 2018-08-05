@@ -2,7 +2,6 @@ package gustavo.calorias.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -19,12 +18,15 @@ import java.util.Locale;
 
 import gustavo.calorias.BaseDatos.BaseDatos;
 import gustavo.calorias.Adaptadores.MyAdapter;
+import gustavo.calorias.Listeners.SwipeableRecyclerViewTouchListener;
 import gustavo.calorias.Objetos.registro;
 import gustavo.calorias.R;
 
 public class Principal extends AppCompatActivity {
 
     RecyclerView recyclerView;
+    MyAdapter adapter;
+    ArrayList<registro> listado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,7 +78,7 @@ public class Principal extends AppCompatActivity {
 
     private void obtenerListadoHoy(){
 
-        ArrayList<registro> listado = BaseDatos
+        listado = BaseDatos
                 .obtenerInstancia(getApplicationContext())
                 .obtenerRegistrosPorFecha(
                         new SimpleDateFormat("yyyy-MM-dd", Locale.FRANCE).format(new Date())
@@ -85,8 +87,43 @@ public class Principal extends AppCompatActivity {
 
 
         //ADAPTER
-        MyAdapter adapter=new MyAdapter(Principal.this,listado);
+        adapter=new MyAdapter(Principal.this,listado);
         recyclerView.setAdapter(adapter);
+
+        SwipeableRecyclerViewTouchListener swipeTouchListener =
+                new SwipeableRecyclerViewTouchListener(recyclerView,
+                        new SwipeableRecyclerViewTouchListener.SwipeListener() {
+
+                            @Override
+                            public boolean canSwipeLeft(int position) {
+                                return true;
+                            }
+
+                            @Override
+                            public boolean canSwipeRight(int position) {
+                                return true;
+                            }
+
+                            @Override
+                            public void onDismissedBySwipeLeft(RecyclerView recyclerView, int[] reverseSortedPositions) {
+                                itemRemoved(reverseSortedPositions);
+                            }
+
+                            @Override
+                            public void onDismissedBySwipeRight(RecyclerView recyclerView, int[] reverseSortedPositions) {
+                                itemRemoved(reverseSortedPositions);
+                            }
+                        });
+
+        recyclerView.addOnItemTouchListener(swipeTouchListener);
+    }
+
+    private void itemRemoved(int[] reverseSortedPositions){
+        for (int position : reverseSortedPositions) {
+            listado.remove(position);
+            adapter.notifyItemRemoved(position);
+        }
+        adapter.notifyDataSetChanged();
     }
 
 }
