@@ -22,7 +22,7 @@ public class registro implements Parcelable {
 
     private String hora;
 
-    private Long id;
+    private int id;
 
     public registro(String nombre, String notas, int calorias, String rutaImagen) {
         this.nombre = nombre;
@@ -33,7 +33,7 @@ public class registro implements Parcelable {
         this.hora = new SimpleDateFormat("HH:mm:ss", Locale.FRANCE).format(new Date());
     }
 
-    public registro(String nombre, String notas, int calorias, String rutaImagen, String fecha, String hora, Long id) {
+    public registro(String nombre, String notas, int calorias, String rutaImagen, String fecha, String hora, int id) {
         this.nombre = nombre;
         this.notas = notas;
         this.calorias = calorias;
@@ -94,11 +94,11 @@ public class registro implements Parcelable {
         this.hora = hora;
     }
 
-    public Long getId() {
+    public int getId() {
         return this.id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -109,7 +109,7 @@ public class registro implements Parcelable {
         rutaImagen = in.readString();
         fecha = in.readString();
         hora = in.readString();
-        id = in.readByte() == 0x00 ? null : in.readLong();
+        id = in.readInt();
     }
 
     @Override
@@ -125,12 +125,7 @@ public class registro implements Parcelable {
         dest.writeString(rutaImagen);
         dest.writeString(fecha);
         dest.writeString(hora);
-        if (id == null) {
-            dest.writeByte((byte) (0x00));
-        } else {
-            dest.writeByte((byte) (0x01));
-            dest.writeLong(id);
-        }
+        dest.writeInt(id);
     }
 
     @SuppressWarnings("unused")

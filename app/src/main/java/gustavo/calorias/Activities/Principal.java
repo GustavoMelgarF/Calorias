@@ -121,6 +121,7 @@ public class Principal extends AppCompatActivity {
     private void itemRemoved(int[] reverseSortedPositions){
         for (int position : reverseSortedPositions) {
             listado.remove(position);
+            BaseDatos.obtenerInstancia(Principal.this).eliminarRegistroPorId((int)listado.get(position).getId());
             adapter.notifyItemRemoved(position);
         }
         adapter.notifyDataSetChanged();

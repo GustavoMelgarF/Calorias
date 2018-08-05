@@ -154,7 +154,7 @@ public class BaseDatos extends SQLiteOpenHelper {
         if (cursor.moveToFirst()){
             do {
                 registro registro = new registro();
-                registro.setId(cursor.getLong(cursor.getColumnIndex(REGISTRO_COLUMNA_ID)));
+                registro.setId(cursor.getInt(cursor.getColumnIndex(REGISTRO_COLUMNA_ID)));
                 registro.setNombre(cursor.getString(cursor.getColumnIndex(REGISTRO_COLUMNA_NOMBRE)));
                 registro.setNotas(cursor.getString(cursor.getColumnIndex(REGISTRO_COLUMNA_NOTAS)));
                 registro.setCalorias(cursor.getInt(cursor.getColumnIndex(REGISTRO_COLUMNA_CALORIAS)));
