@@ -16,21 +16,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c5e3519-3bc8-4163-8bf5-936844ba70f3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Activities/NuevoRegistro.java" afterPath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Activities/NuevoRegistro.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Activities/Principal.java" afterPath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/Activities/Principal.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/BaseDatos/BaseDatos.java" afterPath="$PROJECT_DIR$/app/src/main/java/gustavo/calorias/BaseDatos/BaseDatos.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_principal.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_principal.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/model.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/model.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -2811,7 +2797,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533457278584</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="valores quedan y totales">
+      <created>1533460104297</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1533460104297</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2886,7 +2879,8 @@
     <MESSAGE value="preferencias" />
     <MESSAGE value="swype to delete" />
     <MESSAGE value="id long-&gt;int" />
-    <option name="LAST_COMMIT_MESSAGE" value="id long-&gt;int" />
+    <MESSAGE value="valores quedan y totales" />
+    <option name="LAST_COMMIT_MESSAGE" value="valores quedan y totales" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
