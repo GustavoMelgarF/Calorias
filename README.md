@@ -2,4 +2,4 @@
 # v. 0.1
 
 
-App to manage/control daily calories consumed.
+Android java App to manage/control daily calories consumed.
